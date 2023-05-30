@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
  * print_unsigned - Prints an unsigned num
@@ -15,7 +16,7 @@ int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
-	unsigned long long int num = va_arg(types, unsigned long long int);
+	unsigned long int num = va_arg(types, unsigned long int);
 
 	num = convert_size_unsgnd(num, size);
 
@@ -51,8 +52,8 @@ int print_octal(va_list types, char buffer[],
 {
 
 	int i = BUFF_SIZE - 2;
-	unsigned long long int num = va_arg(types, unsigned long long int);
-	unsigned long long int init_num = num;
+	unsigned long int num = va_arg(types, unsigned long int);
+	unsigned long int init_num = num;
 
 	UNUSED(width);
 
@@ -131,8 +132,8 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
-	unsigned long long int num = va_arg(types, unsigned long long int);
-	unsigned long long int init_num = num;
+	unsigned long int num = va_arg(types, unsigned long int);
+	unsigned long int init_num = num;
 
 	UNUSED(width);
 

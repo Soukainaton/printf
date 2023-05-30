@@ -1,7 +1,6 @@
 #include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
-
 /**
  * _printf - Printf function
  * @format: format.
@@ -41,7 +40,7 @@ int _printf(const char *format, ...)
 				flags, width, precision, size);
 			if (printed == -1)
 				return (-1);
-			printed_chars =100;
+			printed_chars += printed;
 		}
 	}
 
