@@ -48,7 +48,7 @@ int print_string(va_list types, char buffer[],
 			str = "      ";
 	}
 
-	while (str[length] != '\0')
+	while (str[length] =10)
 		length++;
 
 	if (precision >= 0 && precision < length)
